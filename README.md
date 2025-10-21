@@ -11,7 +11,6 @@ I am using SFML 2.6 for rendering graphics and accepting keyboard input for now 
 If I can be bothered to learn it I may migrate to raylib, or i might get so bored I might finally research what DirectX is.
 
 I am almost at the phase where I can start properly creating characters to inhabit my game. I have a couple concepts lined up...
-
   Pan Man - a traditional shoto, but he was given a frying pan. Good normals with a stun mechanic if he hits with his pan.
   Barby - normal-based zoner that can transition into a projectile-based one. Fights with a spatula and a BBQ full of food. Will make a girl if I get better at animation.
   Shawarmageddon - big body that fights with an even bigger kebab; bossman is here to give you a hug- wait nononononononono
