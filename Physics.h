@@ -1,5 +1,7 @@
+//Physics.h
 #ifndef PHYSICS_H
 #define PHYSICS_H
+
 //> Physics objects can represent one of two things:
 //
 //> Actual objects: These are things that we want to simulate, and usually run update() every game tick
@@ -15,14 +17,11 @@
 #define REPLACE true
 
 class Physics {
-public:
 	int posX, posY; bool posX_op, posY_op;		//position
 	int velX, velY; bool velX_op, velY_op;		//velocity
 	int accX, accY; bool accX_op, accY_op;		//acceleration
 
 	void apply_force(Physics, int, int);
-
 	void update();
-
 };
 #endif
