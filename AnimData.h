@@ -3,6 +3,7 @@
 #define ANIMDATA_H
 
 #include "Box.h"
+#include <SFML/Graphics.hpp>
 
 class AnimData {
 public:
