@@ -4,13 +4,10 @@
 //> okay ffs im going to have to rewrite this entire thing
 //^ we are using fscanf or we are crying
 
-//> this is a function that does memory management - therefore it is possible for it to shit itself and die
-//^ I should do smth to make it less bad when it shits and dies. Too bad!
-//^ also rewrite this with fscanf if possible?
 AnimData* create_animation(const char* filename, sf::Texture &texture, AnimData* n = nullptr) {
 
 	std::ifstream infile;
-	infile.open(filename);		//> have a failstate?
+	infile.open(filename);
 
 		//these should be able to change for each frame
 	int width = 76;
@@ -143,3 +140,16 @@ AnimData* create_animation(const char* filename, sf::Texture &texture, AnimData*
 	return animation[0];
 
 }
+
+AnimData* create_animation(const char* filename, sf::Texture &texture, AnimData* n = nullptr){
+
+	FILE* fp;
+	if(fp = fopen(filename, "r") == NULL) return nullptr;
+
+	AnimData** animation;	
+	animation = (AnimData**)malloc(sizeof(AnimData*));
+	
+	
+
+}
+
