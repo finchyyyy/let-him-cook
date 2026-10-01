@@ -1,7 +1,7 @@
 #include "Box.h"
 
     //when she destruct on my box till i uhhhhhhhhhh
-virtual Box::~Box(){}
+Box::~Box(){}
 
 bool overlap(Box a, Box b){
         //bounds check
